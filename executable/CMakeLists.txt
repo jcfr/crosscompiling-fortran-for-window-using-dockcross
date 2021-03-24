@@ -1,0 +1,10 @@
+add_executable(${PROJECT_NAME}
+  helloworld.f90
+  )
+
+install(TARGETS ${PROJECT_NAME}
+  RUNTIME DESTINATION ${HelloWorld_INSTALL_BIN_DIR} COMPONENT RuntimeLibraries
+  LIBRARY DESTINATION ${HelloWorld_INSTALL_LIB_DIR} COMPONENT RuntimeLibraries
+  ARCHIVE DESTINATION ${HelloWorld_INSTALL_LIB_DIR} COMPONENT Development
+  )
+
